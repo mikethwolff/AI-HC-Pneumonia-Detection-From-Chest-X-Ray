@@ -5,6 +5,7 @@ The listed project is part of the AI for Healthcare Nanodegree (Udacity).
 This project culminates in a model that can classify a given chest x-ray for the presence or absence of pneumonia.
 
 ![pneumonia_detection_examples](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/assets/8941220/875f5c36-6d43-4abe-a36b-73c5657f15d2)
+(Example images)
 
 ## This project consist of four steps:
 
@@ -27,9 +28,6 @@ This project culminates in a model that can classify a given chest x-ray for the
 
 The dataset contains over 112,000 frontal-view chest X-ray images (1024*1024 resolution) from more than 30,000 unique patients.
 The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/datasets/nih-chest-xrays/data)
-
-**Example images:** 
-
 
 **Description of Training Dataset:** 
 
@@ -54,7 +52,6 @@ The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/data
 - Image is repeated across 3 channels
 
 **CNN Architecture:**
-!(cnn_architecture_w.png)
 - The model is based on the VGG16 model
 - The VGG16 model output is flattened and passed through several additional dense and dropout layers
 
