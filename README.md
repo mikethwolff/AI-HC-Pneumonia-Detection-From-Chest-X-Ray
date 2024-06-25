@@ -8,9 +8,7 @@ This project culminates in a model that can classify a given chest x-ray for the
 3. Clinical Workflow Integration
 4. FDA Preparation
 
-## Exploratory Data Analysis
-
-The goal of this project, upon it´s completion, is to be able to:
+## The goal of this project, upon it´s completion, is to be able to:
 
 - recommend appropriate imaging modalities for common clinical applications of 2D medical imaging
 - perform exploratory data analysis (EDA) on medical imaging data to inform model training and explain model performance
