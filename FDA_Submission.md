@@ -26,7 +26,7 @@ Predict the presence of pneumonia and support radiologists in classifying pneumo
 
 ### 2. Algorithm Design and Function
 
-!(https://github.com/mikethwolff/Pneumonia-Detection-From-Chest-X-Ray/blob/main/pneumonia_detection_workflow.png)
+!(https://github.com/mikethwolff/Pneumonia-Detection-From-Chest-X-Ray/blob/main/pneumonia_detection_workflow.png?raw=true)
 
 **DICOM Checking Steps:**
 - 'BodyPartExamined' examined is "CHEST"
