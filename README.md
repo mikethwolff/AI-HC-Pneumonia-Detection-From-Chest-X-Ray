@@ -111,6 +111,8 @@ For this project, we create a DICOM wrapper that takes in a standard DICOM file 
 - Proper image acquisition orientation (i.e. those present in your training data)
 - Proper body part in acquisition
 
+Find the "inference" Jupyter notebook [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/Inference.ipynb)
+
 # 4. FDA Submission
 
 For this project, we will complete the steps from the FDA's official guidance on both the algorithm description and the algorithm performance assessment.
