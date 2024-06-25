@@ -38,7 +38,7 @@ The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/data
 
 **Description of Validation Dataset:** 
 
-- The training data has 20% Pneumonia and 80% non Pneumonia patients
+- The validation data has 20% Pneumonia and 80% non Pneumonia patients
 - It contains 1430 images
 
 ## Algorithm Design and Function
