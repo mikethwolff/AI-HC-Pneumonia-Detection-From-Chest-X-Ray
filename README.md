@@ -18,3 +18,39 @@ This project culminates in a model that can classify a given chest x-ray for the
 - train common CNN architectures to classify 2D medical images
 - translate outputs of medical imaging models for use by a clinician
 - plan necessary validations to prepare a medical imaging model for regulatory approval
+
+## Dataset
+
+The dataset contains over 112,000 frontal-view chest X-ray images (1024*1024 resolution) from more than 30,000 unique patients.
+The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/datasets/nih-chest-xrays/data)
+
+**Example images:** 
+
+
+**Description of Training Dataset:** 
+
+- The training data is split equally between Pneumonia and non Pneumonia patients
+- It contains 2290 images
+
+**Description of Validation Dataset:** 
+
+- The training data has 20% Pneumonia and 80% non Pneumonia patients
+- It contains 1430 images
+
+## Algorithm Design and Function
+
+**DICOM Checking Steps:**
+- 'BodyPartExamined' examined is "CHEST"
+- 'PatientPosition' attribute must be either "AP" or "PA"
+- 'Modality' attribute must be "DX"
+
+**Preprocessing Steps:**
+- Image is normalized
+- Image is reshaped
+- Image is repeated across 3 channels
+
+**CNN Architecture:**
+!(cnn_architecture_w.png)
+- The model is based on the VGG16 model
+- The VGG16 model output is flattened and passed through several additional dense and dropout layers
+
