@@ -69,3 +69,46 @@ Some important things to focus on during the EDA may be:
 - Pixel-level assessments of the imaging data for healthy & disease states of interest (e.g. histograms of intensity values) and compare distributions across diseases.
 
 Find the EDA [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/EDA.ipynb).
+
+## 2. Building and Training Your Model
+
+# Training and validating Datasets
+
+From the findings in the EDA component of this project, we curate the appropriate training and validation sets for classifying pneumonia. We asure to take the following into consideration:
+
+- Distribution of diseases other than pneumonia that are present in both datasets
+- Demographic information, image view positions, and number of images per patient in each set
+- Distribution of pneumonia-positive and pneumonia-negative cases in each dataset
+- Model Architecture
+
+In this project, we fine-tune an existing CNN architecture to classify x-rays images for the presence of pneumonia. There is no archictecture required for this project, but a reasonable choice would be using the VGG16 architecture with weights trained on the ImageNet dataset. Fine-tuning can be performed by freezing the chosen pre-built network and adding several new layers to the end to train, or by doing this in combination with selectively freezing and training some layers of the pre-trained network.
+
+# Training
+
+In training our model, there are many parameters that can be tweaked to improve performance including:
+
+- Image augmentation parameters
+- Training batch size
+- Training learning rate
+- Inclusion and parameters of specific layers in your model
+
+
+# Performance Assessment
+
+As we train our model, we will monitor its performance over subsequence training epochs. We choose the appropriate metrics upon which to monitor performance. Note that 'accuracy' may not be the most appropriate statistic in this case, depending on the balance or imbalance of your validation dataset, and also depending on the clinical context that you want to use this model in (i.e. can you sacrafice high false positive rate for a low false negative rate?)
+
+Note: Detecting pneumonia is hard even for trained expert radiologists. [This paper](https://arxiv.org/pdf/1711.05225.pdf) describes some human-reader-level F1 scores for detecting pneumonia, and can be used as a reference point for how well your model could perform.
+
+## 3. Clinical Workflow Integration
+
+The imaging data provided to you for training your model was transformed from DICOM format into .png to help aid in the image pre-processing and model training steps of this project. In the real world, however, the pixel-level imaging data are contained inside of standard DICOM files.
+
+For this project, create a DICOM wrapper that takes in a standard DICOM file and outputs data in the format accepted by your model. Be sure to include several checks in your wrapper for the following:
+
+Proper image acquisition type (i.e. X-ray)
+Proper image acquisition orientation (i.e. those present in your training data)
+Proper body part in acquisition
+
+## 4. FDA Submission
+
+For this project, you will complete the following steps that are derived from the FDA's official guidance on both the algorithm description and the algorithm performance assessment. Much of this portion of the project relies on what you did during your EDA, model building, and model training. Use figures and statistics from those earlier parts in completing the following documentation.
