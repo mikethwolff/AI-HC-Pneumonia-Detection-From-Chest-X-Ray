@@ -54,7 +54,7 @@ The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/data
 - The model is based on the VGG16 model
 - The VGG16 model output is flattened and passed through several additional dense and dropout layers
 
-## 1. Exploratory Data Analysis
+# 1. Exploratory Data Analysis
 The first part of this project will involve exploratory data analysis (EDA) to understand and describe the content and nature of the data.
 
 Some important things to focus on during the EDA may be:
@@ -70,9 +70,9 @@ Some important things to focus on during the EDA may be:
 
 Find the EDA [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/EDA.ipynb).
 
-## 2. Building and Training Your Model
+# 2. Building and Training Your Model
 
-# Training and validating Datasets
+## Training and validating Datasets
 
 From the findings in the EDA component of this project, we curate the appropriate training and validation sets for classifying pneumonia. We asure to take the following into consideration:
 
@@ -83,7 +83,7 @@ From the findings in the EDA component of this project, we curate the appropriat
 
 In this project, we fine-tune an existing CNN architecture to classify x-rays images for the presence of pneumonia. There is no archictecture required for this project, but a reasonable choice would be using the VGG16 architecture with weights trained on the ImageNet dataset. Fine-tuning can be performed by freezing the chosen pre-built network and adding several new layers to the end to train, or by doing this in combination with selectively freezing and training some layers of the pre-trained network.
 
-# Training
+## Training
 
 In training our model, there are many parameters that can be tweaked to improve performance including:
 
@@ -93,22 +93,22 @@ In training our model, there are many parameters that can be tweaked to improve 
 - Inclusion and parameters of specific layers in your model
 
 
-# Performance Assessment
+## Performance Assessment
 
 As we train our model, we will monitor its performance over subsequence training epochs. We choose the appropriate metrics upon which to monitor performance. Note that 'accuracy' may not be the most appropriate statistic in this case, depending on the balance or imbalance of your validation dataset, and also depending on the clinical context that you want to use this model in (i.e. can you sacrafice high false positive rate for a low false negative rate?)
 
 Note: Detecting pneumonia is hard even for trained expert radiologists. [This paper](https://arxiv.org/pdf/1711.05225.pdf) describes some human-reader-level F1 scores for detecting pneumonia, and can be used as a reference point for how well your model could perform.
 
-## 3. Clinical Workflow Integration
+# 3. Clinical Workflow Integration
 
 The imaging data provided to you for training your model was transformed from DICOM format into .png to help aid in the image pre-processing and model training steps of this project. In the real world, however, the pixel-level imaging data are contained inside of standard DICOM files.
 
-For this project, create a DICOM wrapper that takes in a standard DICOM file and outputs data in the format accepted by your model. Be sure to include several checks in your wrapper for the following:
+For this project, we create a DICOM wrapper that takes in a standard DICOM file and outputs data in the format accepted by your model. We assure to include several checks in your wrapper for the following:
 
-Proper image acquisition type (i.e. X-ray)
-Proper image acquisition orientation (i.e. those present in your training data)
-Proper body part in acquisition
+- Proper image acquisition type (i.e. X-ray)
+- Proper image acquisition orientation (i.e. those present in your training data)
+- Proper body part in acquisition
 
-## 4. FDA Submission
+# 4. FDA Submission
 
-For this project, you will complete the following steps that are derived from the FDA's official guidance on both the algorithm description and the algorithm performance assessment. Much of this portion of the project relies on what you did during your EDA, model building, and model training. Use figures and statistics from those earlier parts in completing the following documentation.
+For this project, we will complete the steps from the FDA's official guidance on both the algorithm description and the algorithm performance assessment.
