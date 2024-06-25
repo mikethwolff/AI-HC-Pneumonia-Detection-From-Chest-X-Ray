@@ -1,4 +1,6 @@
 ## AI for Healthcare
+The listed projects were part of th AI for Healthcare Nanodegree and are displayed in derivated form due to possible copyright restrictions.
+
 # Pneumonia-Detection-From-Chest-X-Ray
 This project culminates in a model that can classify a given chest x-ray for the presence or absence of pneumonia.
 
