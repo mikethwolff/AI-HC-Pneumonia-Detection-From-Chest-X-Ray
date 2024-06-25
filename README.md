@@ -68,4 +68,4 @@ Some important things to focus on during the EDA may be:
 - Number of disease per patient
 - Pixel-level assessments of the imaging data for healthy & disease states of interest (e.g. histograms of intensity values) and compare distributions across diseases.
 
-
+Find the EDA [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/EDA.ipynb).
