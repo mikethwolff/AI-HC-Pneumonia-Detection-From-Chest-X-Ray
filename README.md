@@ -5,7 +5,6 @@ The listed project is part of the AI for Healthcare Nanodegree (Udacity).
 This project culminates in a model that can classify a given chest x-ray for the presence or absence of pneumonia.
 
 ![pneumonia_detection_examples](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/assets/8941220/875f5c36-6d43-4abe-a36b-73c5657f15d2)
-(Example images)
 
 ## This project consist of four steps:
 
