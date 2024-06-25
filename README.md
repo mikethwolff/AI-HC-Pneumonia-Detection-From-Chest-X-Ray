@@ -99,6 +99,8 @@ As we train our model, we will monitor its performance over subsequence training
 
 Note: Detecting pneumonia is hard even for trained expert radiologists. [This paper](https://arxiv.org/pdf/1711.05225.pdf) describes some human-reader-level F1 scores for detecting pneumonia, and can be used as a reference point for how well your model could perform.
 
+Find the "build and train model" Jupyter notebook [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/Build%20and%20train%20model.ipynb).
+
 # 3. Clinical Workflow Integration
 
 The imaging data provided to you for training your model was transformed from DICOM format into .png to help aid in the image pre-processing and model training steps of this project. In the real world, however, the pixel-level imaging data are contained inside of standard DICOM files.
