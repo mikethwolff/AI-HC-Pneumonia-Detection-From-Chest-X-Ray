@@ -60,9 +60,9 @@ Predict the presence of pneumonia and support radiologists in classifying pneumo
 - Layers of pre-existing architecture that were fine-tuned: None
 - Layers added to pre-existing architecture: Flatten, Dense and Dropout layers
 
-!(training_performance.png)
+![training_performance](https://github.com/mikethwolff/Pneumonia-Detection-From-Chest-X-Ray/assets/8941220/049202ff-79b9-4e14-845e-9a22bed79e70)
 
-!(precision_recall_curve.png)
+![precision_recall_curve](https://github.com/mikethwolff/Pneumonia-Detection-From-Chest-X-Ray/assets/8941220/77a5b2ee-a4d1-48a1-9ec0-51edf372e144)
 
 **Final Threshold and Explanation:**
 
