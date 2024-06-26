@@ -26,7 +26,7 @@ This project culminates in a model that can classify a given chest x-ray for the
 ## Dataset
 
 The dataset contains over 112,000 frontal-view chest X-ray images (1024*1024 resolution) from more than 30,000 unique patients.
-The Dataset is taken from Kaggle: [NIH Chest X-rays](https://www.kaggle.com/datasets/nih-chest-xrays/data)
+The Dataset is taken from Kaggle's NIH Chest X-rays.
 
 **Description of Training Dataset:** 
 
