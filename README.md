@@ -95,9 +95,7 @@ In training our model, there are many parameters that can be tweaked to improve 
 
 ## Performance Assessment
 
-As we train our model, we will monitor its performance over subsequence training epochs. We choose the appropriate metrics upon which to monitor performance. Note that 'accuracy' may not be the most appropriate statistic in this case, depending on the balance or imbalance of your validation dataset, and also depending on the clinical context that you want to use this model in (i.e. can you sacrafice high false positive rate for a low false negative rate?)
-
-Note: Detecting pneumonia is hard even for trained expert radiologists. [This paper](https://arxiv.org/pdf/1711.05225.pdf) describes some human-reader-level F1 scores for detecting pneumonia, and can be used as a reference point for how well your model could perform.
+As we train our model, we will monitor its performance over subsequence training epochs. We choose the appropriate metrics upon which to monitor performance. Can you sacrafice high false positive rate for a low false negative rate?
 
 Find the "build and train model" Jupyter notebook [here](https://github.com/mikethwolff/AI-HC-Pneumonia-Detection-From-Chest-X-Ray/blob/main/Build%20and%20train%20model.ipynb).
 
@@ -116,3 +114,6 @@ Find the "inference" Jupyter notebook [here](https://github.com/mikethwolff/AI-H
 # 4. FDA Submission
 
 For this project, we will complete the steps from the FDA's official guidance on both the algorithm description and the algorithm performance assessment.
+
+Note: Detecting pneumonia is hard even for trained expert radiologists. [This paper](https://arxiv.org/pdf/1711.05225.pdf) describes some human-reader-level F1 scores for detecting pneumonia, and can be used as a reference point for how well your model could perform.
+
